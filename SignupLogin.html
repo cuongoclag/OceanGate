@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="shortcut icon" href="upload/logo.png" />
+<link rel="stylesheet" href="css/SignupLogin.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/fontawesome.css"/>
+</head>
+
+<body class="anh_nen">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-----------------------------------------------------------Header------------------------------------------------------------------------>
+<div class="khung1 n_xanh_la"></div>
+<div class="khung2 nen_xam_toi">
+	<div class="toggle"><i class="fas fa-bars cl dam c_trang menu"></i></div>
+	<div class="khung21">
+    	<div><a class="cn c_trang" href="trang-chu.html"><i class="fas fa-home"></i>Home</a></div>
+        <div><a class="cn c_trang" href="SignupLogin.html"><i class="fas fa-user-alt"></i>My Account</a></div>
+        <div><a class="cn c_trang" href="Pageblog1.html"><i class="fab fa-blogger-b"></i>Blog</a></div>
+        <div><a class="cn c_trang" href="product.html"><i class="fas fa-store"></i>Product</a></div>
+    </div>
+    <div class="khung22">
+    	<div><a class="cn c_trang" href="">USD<i class="fas fa-angle-down"></i></a></div>
+        <div><a class="cn c_trang" href="">EN<i class="fas fa-angle-down"></i></a></div>
+    </div>
+</div>
+<div class="khung3 nen_xam">
+	<div class="khung31">
+    	<div class="khung311"><i class="fas fa-phone ct c_xam"></i></div>
+        <div class="khung312">
+        	<div class="ct">Call us:</div>
+            <div><a href="" class="ct ">800-234-****</a></div>
+        </div>
+    </div>
+    <div class="khung32"><img src="upload/logo.png" /></div>
+    <div class="khung33">
+    	<div class="khung331">
+        	<form>
+            	<input type="text" placeholder="Search entire store here" autocomplete="off" class="cn"/>
+                <button type="submit" class="ct"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="khung332">
+        	<a href=""><i class="fas fa-shopping-cart ct c_xam"></i></a>
+        </div>
+    </div>
+</div>
+<div class="khung4 nen_xam" id="Menutop">
+	<div class="cn dam c_xam "><a href="FDD.html">Floppy diskette</a></div>
+    <div class="cn dam c_xam"><a href="HD.html">Hard Drive</a></div>
+    <div class="cn dam c_xam"><a href="Blu-ray.html">Blu-ray disc</a></div>
+    <div class="cn dam c_xam"><a href="CD.html">CD-ROM disc</a></div>
+    <div class="cn dam c_xam"><a href="DVD.html">DVD disc</a></div>
+</div>
+
+<div class="khung5">
+<div class="ccl dam c_do">Sign Up & Login </div>
+</div>
+
+<!-----------------------------------------------------------End-Header------------------------------------------------------------------------>
+
+<!-----------------------------------------------------------Content------------------------------------------------------------------------>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#" id="form1" onsubmit="form1(); return false;">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" name="name" id="name" placeholder="Name" autofocus="autofocus" required="required"/>
+			<input type="email" name="email" id="email" placeholder="Email"  required="required"/>
+			<input type="password" id="password" name="pw" placeholder="Password"  required="required" />
+			<button type="submit" value="Submit" id="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#" id="form2" onsubmit="form2(); return false;">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" name="email" id="email" placeholder="Email"  required="required" />
+			<input type="password" id="password" name="pw" placeholder="Password"  required="required" />
+			<a href="#">Forgot your password?</a>
+			<button type="submit" value="Submit" id="submit">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="signup n_trang" id="signup">
+    <form class="signup1 n_xanh_la" id="form2" onsubmit="form2(); return false;">
+        <div class="cl dam">Sign In</div>
+        <div class="signup12">
+            <div><i class="fab fa-facebook-f ct dam"></i></div>
+            <div><i class="fab fa-google-plus-g ct dam"></i></div>
+            <div><i class="fab fa-linkedin-in ct dam"></i></div>
+        </div>
+        <div class="ccn">or use your account</div>
+        <div class="signup14">
+            <input type="email" name="email" id="email" placeholder="Email"  required="required" />
+            <input type="password" id="password" name="pw" placeholder="Password"  required="required" />
+        </div>
+        <div class="signup15"><a href="" class="cn">Forgot your password?</a></div>
+        <div class="signup16">
+            <button class="ct dam" type="submit" value="Submit" id="submit">SIGN IN</button>
+        </form>
+    </div>
+    <form class="signup2 n_xanh_la" id="form1" onsubmit="form1(); return false;">
+        <div class="cl dam">Sign Up</div>
+            <div class="signup22">
+                <div><i class="fab fa-facebook-f ct dam"></i></div>
+                <div><i class="fab fa-google-plus-g ct dam"></i></div>
+                <div><i class="fab fa-linkedin-in ct dam"></i></div>
+            </div>
+            <div class="ccn">or use your account</div>
+            <div class="signup24">
+                <input type="text" name="name" id="name" placeholder="Name" autofocus="autofocus" required="required"/>
+                <input type="email" name="email" id="email" placeholder="Email"  required="required"/>
+                <input type="password" id="password" name="pw" placeholder="Password"  required="required" />
+            </div>
+            <div class="signup26">
+                <button class="ct dam" type="submit" value="Submit" id="submit">SIGN UP</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-----------------------------------------------------------End-Content------------------------------------------------------------------------>
+
+<!-----------------------------------------------------------Footer------------------------------------------------------------------------>
+<div class="footer1 n_xanh_la">
+        <div class="footer11">
+            <div class="footer111">
+                <div><i class="far fa-envelope ccl c_do"></i></div>
+                <div class="ct dam c_trang">Sign Up for Our Newsletter:</div>
+            </div>
+            <div class="footer112">
+                <form>
+                    <input type="text" autocomplete="off" class="cn"/>
+                    <button type="submit" class="ct dam c_trang n_do">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer12">
+            <div class="footer121">
+                <div class="ct dam c_trang">INFORMATION</div>
+                <div><a href="aboutus.html" class="cn c_trang">About Us</a></div>
+                <div><a href="feedback.html" class="cn c_trang">FeedBack</a></div>
+                <div><a href="contact.html" class="cn c_trang">Contact Us</a></div>
+            </div>
+           <div class="footer121">
+                <div class="ct dam c_trang">MY ACCOUNT</div>
+                <div><a href="SignupLogin.html" class="cn c_trang">Sign In</a></div>
+                <div><a href="SignupLogin.html" class="cn c_trang">Create Account</a></div>
+            </div>
+            <div class="footer121">
+                <div class="ct dam c_trang">Follow Us</div>
+                <div><a href="" class="cn c_trang"><i class="fab fa-facebook ct c_xanh_bien"></i>Facebook</a></div>
+                <div><a href="" class="cn c_trang"><i class="fab fa-youtube ct c_do"></i>Youtube</a></div>
+                <div><a href="" class="cn c_trang"><i class="fab fa-instagram ct c_do"></i>Instargam</a></div>
+            </div>
+            <div class="footer122">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3175193308243!2d106.66413191411654!3d10.786975261950216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech+Computer+Education+HCM!5e0!3m2!1svi!2s!4v1566360764606!5m2!1svi!2s" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="back-to" ><i class="fas fa-arrow-up ct dam c_trang"></i></div>
+<!-----------------------------------------------------------End-Footer------------------------------------------------------------------------>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="javascript/SignupLogin.js"></script>
+<script src="javascript/jsscript.js"></script>
+
+</body>
+</html>
